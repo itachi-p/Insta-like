@@ -113,9 +113,10 @@
   - AWS ECS設定
   - AWS ECRにローカルでビルドしたイメージをpush
     - 上記を実行するための初回設定
-    - AWS Cliのインストール(`pip3`)
+    - AWS Cliのインストール(`pip3`)及び認証情報設定→ログイン成功
   - 新規Elastic Beanstalk multi-container Docker 環境を構築
-
+- 2019/10/06
+  - 
 
 ---
 
