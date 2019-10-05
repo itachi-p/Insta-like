@@ -7,7 +7,7 @@
 このページはまだ**工事(準備)中**です。<br>
 **タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。**
 
-<a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（開発中）</a><br>
+<a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（稼働停止中）</a><br>
 <br>
 ~~テストページ2~~ （テスト開発完了、稼働停止済）<br>
 - PHP7.2 & Laravel & AWS Elastic Beanstalk(ECS)/VPC/EC2/Route53/EBS/IAM(ユーザー・グループ権限管理)
@@ -16,7 +16,7 @@
 
 <a href="http://test-gcp.itachi-p.com/">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
 
-<a href="http://test-aws.insta-like.itachi-p.com">インスタグラムもどき</a>
+<a href="http://test-aws.insta-like.itachi-p.com">インスタグラムもどき (Laradock)</a>
 
 - （参考）
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
@@ -90,7 +90,7 @@
   - テストページ3（GCP＆Docker) | テストページ１（AWS＆Docker)上でfortunesを走らせるところまで実装
   - インスタもどき作成開始（1週間以内、10/７(月)まで）
 - 2019/10/03
-  - Docker、AWS、Terraterm学習
+  - Docker、AWS、~~Terraterm学習~~
     - Docker Machine - WindowsやMac上のVMで動くDockerホストを作成(Docker Engineを実行)できるVirtualBox,Vagrant互換VM環境
       1. ローカル(リモートも)にDocker Machineを使い、Docker Engineが動く仮想マシンをプロビジョニングする
       2. その仮想環境に接続すると、その後はdockerコマンドが実行可能になる
@@ -102,13 +102,20 @@
       - bind mount (実際にはホスト上のファイルやディレクトリ)
       - tmpfs (実際にはホスト上のメモリ)
     - Docker Compose
-  - 2019/10/04
-    - インスタもどき簡易作成
-      - DB設計
+- 2019/10/04
+  - インスタもどき簡易作成
+    - DB設計
         1. 概念設計　エンティティ抽出、リレーションシップ設定（1：1、1：多、多対多）
         2. 論理設計　概念モデルから多対多を除外しリレーショナルモデル（表）に変換→更に第1〜3正規化（一意性の確保、中間テーブルの作成）、ER図の作成
         3. 物理設計　リレーショナルモデルから実際にテーブルを作成（データ型、制約の設定）
-      - (参考)[4ステップで作成する、DB論理設計の手順とチェックポイントまとめ](https://qiita.com/nishina555/items/a79ece1b54faf7240fac)
+    - (参考)[4ステップで作成する、DB論理設計の手順とチェックポイントまとめ](https://qiita.com/nishina555/items/a79ece1b54faf7240fac)
+- 2019/10/05
+  - AWS ECS設定
+  - AWS ECRにローカルでビルドしたイメージをpush
+    - 上記を実行するための初回設定
+    - AWS Cliのインストール(`pip3`)
+  - 新規Elastic Beanstalk multi-container Docker 環境を構築
+
 
 ---
 
