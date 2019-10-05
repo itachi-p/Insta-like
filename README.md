@@ -16,7 +16,7 @@
 
 <a href="http://test-gcp.itachi-p.com/">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
 
-<a href="http://test-aws.insta-like.itachi-p.com">インスタグラムもどき (Laradock)</a>
+<a href="http://test-aws.instamodoki.itachi-p.com">インスタグラムもどき (Laradock)</a>
 
 - （参考）
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
