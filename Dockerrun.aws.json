@@ -23,7 +23,7 @@
     "containerDefinitions": [
         {
             "name": "php-fpm",
-            "image": ".568975345534.dkr.ecr.ap-northeast-1.amazonaws.com/php-fpm:latest",
+            "image": "123456789.dkr.ecr.ap-northeast-1.amazonaws.com/php-fpm:latest",
             "essential": true,
             "memory": 128,
             "mountPoints": [
@@ -39,7 +39,7 @@
         },
         {
             "name": "nginx",
-            "image": "568975345534.dkr.ecr.ap-northeast-1.amazonaws.com/nginx:latest",
+            "image": "123456789.dkr.ecr.ap-northeast-1.amazonaws.com/nginx:latest",
             "essential": true,
             "memory": 128,
             "mountPoints": [
