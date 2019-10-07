@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laraぶるデフォルト画面</title>
+        <link rel="icon" href="{{ asset('fuca_tehepero_icon_32x32.ico') }}" sizes="32x32">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,7 +82,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laraぶる
                 </div>
 
                 <div class="links">
@@ -96,5 +97,6 @@
                 </div>
             </div>
         </div>
+        <a href="/home">イ○スタもどきホーム</a>
     </body>
 </html>
