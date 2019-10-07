@@ -115,9 +115,9 @@
     - 上記を実行するための初回設定
     - AWS Cliのインストール(`pip3`)及び認証情報設定→ログイン成功
   - 新規Elastic Beanstalk multi-container Docker 環境を構築
-- 2019/10/06
-  - 
-
+- 2019/10/06～07
+  - docker-compose→Dockerrun.aws.json自動変換 https://github.com/micahhausler/container-transform
+  - インスタもどきアプリ簡易作成
 ---
 
 ### (以後の予定)
