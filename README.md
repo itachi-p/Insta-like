@@ -103,19 +103,19 @@
       - tmpfs (実際にはホスト上のメモリ)
     - Docker Compose
 - 2019/10/04
-  - インスタもどき簡易作成
+  - インスタもどき簡易作成 (Laradock / Docker / AWS Elastic Beanstalk multi-container Docker)
     - DB設計
         1. 概念設計　エンティティ抽出、リレーションシップ設定（1：1、1：多、多対多）
         2. 論理設計　概念モデルから多対多を除外しリレーショナルモデル（表）に変換→更に第1〜3正規化（一意性の確保、中間テーブルの作成）、ER図の作成
         3. 物理設計　リレーショナルモデルから実際にテーブルを作成（データ型、制約の設定）
     - (参考)[4ステップで作成する、DB論理設計の手順とチェックポイントまとめ](https://qiita.com/nishina555/items/a79ece1b54faf7240fac)
-- 2019/10/05
+- 2019/10/05〜06
   - AWS ECS設定
-  - AWS ECRにローカルでビルドしたイメージをpush
+  - AWS ECRにローカルでビルドしたnginx及びphp-fpmイメージをpush→Dockerrun.aws.jsonの設定によりECRからpullして環境として利用する
     - 上記を実行するための初回設定
-    - AWS Cliのインストール(`pip3`)及び認証情報設定→ログイン成功
+    - AWS Cliのインストール(`pip3`)及び認証情報設定→ログイン成功、並びにIAMのユーザーにEB,ECSアクセス用ロール適用、ポリシー作成
   - 新規Elastic Beanstalk multi-container Docker 環境を構築
-- 2019/10/06～07
+- 2019/10/07
   - docker-compose→Dockerrun.aws.json自動変換 https://github.com/micahhausler/container-transform
   - インスタもどきアプリ簡易作成
 ---
