@@ -11,7 +11,7 @@
 <br>
 ~~テストページ2~~ （テスト開発完了、稼働停止済）<br>
 - PHP7.2 & Laravel & AWS Elastic Beanstalk(ECS)/VPC/EC2/Route53/EBS/IAM(ユーザー・グループ権限管理)
-/S3(ストレージ)/RDS(MySQL)/ACM(HTTPS接続用電子証明)/Load Balancer(負荷分散)
+/S3(ストレージ)/RDS(MySQL)/ACM(HTTPS接続用電子証明)/Load Balancing(負荷分散)/Auto Scaling(パフォーマンス・コストバランス自動管理)
 /CloudWatch(メトリクス監視→通知・パフォーマンス自動管理)/SimpleNotificationService(CloudWatchと連動したアラート通知)/etc.<br>
 
 <a href="http://test-gcp.itachi-p.com/">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
