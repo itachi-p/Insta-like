@@ -116,7 +116,7 @@
     - AWS Cliのインストール(`pip3`)及び認証情報設定→ログイン成功、並びにIAMのユーザーにEB,ECSアクセス用ロール適用、ポリシー作成
   - 新規Elastic Beanstalk multi-container Docker 環境を構築
 - 2019/10/07
-  - docker-compose.yml→Dockerrun.aws.json自動変換 https://github.com/micahhausler/container-transform
+  - [docker-compose.yml→Dockerrun.aws.json自動変換](https://github.com/micahhausler/container-transform)
   - インスタもどきアプリ簡易作成
 ---
 
