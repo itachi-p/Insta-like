@@ -10,7 +10,7 @@
         {
             "name": "php-ini",
             "host": {
-                "sourcePath": "/var/app/current/php-fpm/php71.ini"
+                "sourcePath": "/var/app/current/php-fpm/php7.3.ini"
             }
         },
         {
@@ -29,7 +29,7 @@
             "mountPoints": [
                 {
                     "sourceVolume": "application",
-                    "containerPath": "/var/www"
+                    "containerPath": "/var/www/public/"
                 },
                 {
                     "sourceVolume": "php-ini",
@@ -45,7 +45,7 @@
             "mountPoints": [
                 {
                     "sourceVolume": "application",
-                    "containerPath": "/var/www"
+                    "containerPath": "/var/www/public/"
                 },
                 {
                     "sourceVolume": "nginx-sites",
