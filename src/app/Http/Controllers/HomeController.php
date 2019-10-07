@@ -6,10 +6,10 @@ use App\Model\Image;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function home()
     {
         $images = Image::all();
-        return view('index', ['images' => $images]);
+        return view('home', ['images' => $images]);
     }
 
 
