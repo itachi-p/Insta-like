@@ -29,7 +29,7 @@
             "mountPoints": [
                 {
                     "sourceVolume": "application",
-                    "containerPath": "/var/www"
+                    "containerPath": "/var/www/public/"
                 },
                 {
                     "sourceVolume": "php-ini",
@@ -45,7 +45,7 @@
             "mountPoints": [
                 {
                     "sourceVolume": "application",
-                    "containerPath": "/var/www"
+                    "containerPath": "/var/www/public/"
                 },
                 {
                     "sourceVolume": "nginx-sites",
