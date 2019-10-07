@@ -7,7 +7,7 @@
 このページはまだ**工事(準備)中**です。<br>
 **タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。**
 
-<a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（稼働停止中）</a><br>
+<a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（開発中）</a><br>
 <br>
 ~~テストページ2~~ （テスト開発完了、稼働停止済）<br>
 - PHP7.2 & Laravel & AWS Elastic Beanstalk(ECS)/VPC/EC2/Route53/EBS/IAM(ユーザー・グループ権限管理)
@@ -16,7 +16,7 @@
 
 <a href="http://test-gcp.itachi-p.com/">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
 
-<a href="http://test-aws.instamodoki.itachi-p.com">インスタグラムもどき (Laradock)</a>
+<a href="http://itachip.ap-northeast-1.elasticbeanstalk.com/">インスタグラムもどき (ElasticBeanstalk multi-container Docker & Laradock)</a>
 
 - （参考）
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
