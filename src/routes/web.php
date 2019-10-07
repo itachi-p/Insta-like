@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 # Laravelがデフォルトで用意してるmigrationを利用したusersテーブルを利用
