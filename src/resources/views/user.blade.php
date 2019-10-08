@@ -6,7 +6,8 @@
     <link rel="icon" href="{{ asset('fuca_tehepero_icon_32x32.ico') }}" sizes="32x32">
 </head>
 <body>
-    {{ $username }} さん、ようこそいらっしゃいまし。
+    {{ $user_id }}
+    {{ $user_name }} さん、ようこそいらっしゃいまし。
 
 </body>
 </html>                                                                                                                     

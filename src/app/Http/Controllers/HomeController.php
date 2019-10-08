@@ -11,7 +11,7 @@ class HomeController extends Controller
         $images = Image::all();
         return view('home', ['images' => $images]);
     }
-    
+
     public function upload(Request $request)
     {
         $this->validate($request, [
@@ -30,7 +30,7 @@ class HomeController extends Controller
             $move = $request->file->move('./images/', $filename);
 
             //仮実装
-            $user_id = '1';
+            //$user_id = '1';
 
             $images = new Image;
             $images->fill(['user_id' => $user_id, 'filename' => $filename])->save();

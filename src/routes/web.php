@@ -8,3 +8,4 @@ Route::get('/', function () {
 Route::get('/user', 'UserController@index');
 
 Route::get('/home', 'HomeController@home');
+Route::post('/upload', 'HomeController@upload');
