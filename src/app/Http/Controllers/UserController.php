@@ -6,19 +6,21 @@ use App\User;
 
 class UserController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::all()->toArray();
+        // データの追加 emailの値はランダムな英小文字8文字を使用
+        $email = substr(str_shuffle('abcdefghijklmnopqrstuvwxyz'), 0, 8) . '@dummy.com';
+        User::insert(['name' => 'Osaka hanako', 'email' => $email, 'password' => 'password']);
+        $users = User::all();
+        //$users = User::all()->toArray();
 //var_dump($users); //debug
 //dd($users); //debug
-        $user_id = $users[0]['id'];
-        $user_name = $users[0]['name'];
 
-        $request = new Request;
+        //$request = new Request;
         $request->merge([
-            'user_id' => $user_id,
-            'user_name' => $user_name,
+            'users' => $users,
         ]);
+
         return view('user', $request);
     }
 }
