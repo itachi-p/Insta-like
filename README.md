@@ -118,6 +118,12 @@
 - 2019/10/07
   - [docker-compose.yml→Dockerrun.aws.json自動変換](https://github.com/micahhausler/container-transform)
   - インスタもどきアプリ簡易作成
+  - EB multi-container上でnginxのデフォルトページだけが表示される状態が未だ未解決
+  - Dockerrun.aws.json及びローカルのディレクトリ構成変更
+  - デプロイ方法をソースバンドル(Dockerrun.aws.json及びLaravelアプリ本体を含むzip)のアップロードからターミナル上でAWS EB Cliをインストールし、`eb deploy`コマンドによるデプロイに変更
+  - AWS Cliと EB Cliの違いもまだよくわかってないので要確認
+  - pip(python2)とpip3(python3)の使い分けもよくわかってないが、既に両方のバージョン入ってるので理解必要かも
+
 ---
 
 ### (以後の予定)
