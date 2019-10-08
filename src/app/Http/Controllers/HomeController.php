@@ -11,19 +11,22 @@ class HomeController extends Controller
         $images = Image::all();
 //dd($images[0]); //debug
         // (仮)
-        $request->merge(['user_id' => $images[0]['user_id'],]);
+        foreach ($images as $image) {
+            $request->merge(['user_id' => $image->user_id,]);
+        }
 //dd($request); //debug
         return view('home', ['images' => $images, 'request' => $request]);
     }
 
     public function upload(Request $request)
     {
+//dd($request);       
         $this->validate($request, [
             'file' => [
                 'required', // 入力必須であること    
                 'file',     // アップロードされたファイルであること
                 'image',    // 画像ファイルであること
-                'mimes:jpeg,png',   // MIMEタイプを指定
+                'mimes:jpeg,png,gif',   // MIMEタイプを指定
             ]
         ]);
 
