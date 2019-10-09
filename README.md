@@ -14,13 +14,13 @@
 /S3(ストレージ)/RDS(MySQL)/ACM(HTTPS接続用電子証明)/Load Balancing(負荷分散)/Auto Scaling(パフォーマンス・コストバランス自動管理)
 /CloudWatch(メトリクス監視→通知・パフォーマンス自動管理)/SimpleNotificationService(CloudWatchと連動したアラート通知)/etc.<br>
 
-<a href="http://test-gcp.itachi-p.com/">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
-
-<a href="http://itachip.ap-northeast-1.elasticbeanstalk.com/">インスタグラムもどき (ElasticBeanstalk multi-container Docker & Laradock)</a>
+<a href="http://test-gcp.itachi-p.com/" style="pointer-events: none;">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
 
 - （参考）
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
   - [GCE上のContainer-Optimized OSでDocker Composeを使う（和訳）](https://qiita.com/gorohash/items/608da9050b32db581802)
+
+<a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">テストページ4 インス○もどき (ElasticBeanstalk multi-container Docker & Laradock)</a>
 
 ---
 
