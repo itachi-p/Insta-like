@@ -2,9 +2,9 @@
     "AWSEBDockerrunVersion": 2,
     "volumes": [
         {
-            "name": "src",
+            "name": "laravel-app",
             "host": {
-                "sourcePath": "/var/app/current/Insta-like"
+                "sourcePath": "/var/app/current/laravel-app/public"
             }
         },
         {
@@ -14,22 +14,22 @@
             }
         },
         {
-            "name": "nginx-sites",
-            "host": {
-                "sourcePath": "/var/app/current/nginx/sites"
-            }
+          "name": "nginx-proxy-conf",
+          "host": {
+            "sourcePath": "/var/app/current/proxy/conf.d"
+          }
         }
-    ],
+      ],
     "containerDefinitions": [
         {
-            "name": "php-fpm",
+            "name": "laravel-app",
             "image": "568975345534.dkr.ecr.ap-northeast-1.amazonaws.com/php-fpm:latest",
             "essential": true,
             "memory": 128,
             "mountPoints": [
                 {
-                    "sourceVolume": "src",
-                    "containerPath": "/var/www/public"
+                    "sourceVolume": "laravel-app",
+                    "containerPath": "/var/www"
                 },
                 {
                     "sourceVolume": "php-ini",
@@ -44,16 +44,17 @@
             "memory": 128,
             "mountPoints": [
                 {
-                    "sourceVolume": "src",
-                    "containerPath": "/var/www/public"
+                    "sourceVolume": "laravel-app",
+                    "containerPath": "/var/www"
                 },
                 {
-                    "sourceVolume": "nginx-sites",
-                    "containerPath": "/etc/nginx/sites-available"
+                  "sourceVolume": "nginx-proxy-conf",
+                  "containerPath": "/etc/nginx/conf.d",
+                  "readOnly": true
                 }
             ],
             "links": [
-                "php-fpm"
+                "laravel-app"
             ],
             "portMappings": [{
                 "hostPort": 80,
