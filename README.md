@@ -20,7 +20,7 @@
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
   - [GCE上のContainer-Optimized OSでDocker Composeを使う（和訳）](https://qiita.com/gorohash/items/608da9050b32db581802)
 
-<a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">テストページ4 インス○もどき (ElasticBeanstalk multi-container Docker & Laradock)</a>
+<a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">テストページ4 インス○もどき (ElasticBeanstalk multi-container Docker & Laradock)</a><br>
 10/09現在nginxデフォルトページ表示固定でLaravelアプリまで届かない問題に手こずり中
 
 ---
