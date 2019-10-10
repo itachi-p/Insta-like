@@ -122,7 +122,7 @@
   - Dockerrun.aws.json及びローカルのディレクトリ構成変更
   - デプロイ方法をソースバンドル(Dockerrun.aws.json及びLaravelアプリ本体を含むzip)のアップロードからターミナル上でAWS EB Cliをインストールし、`eb deploy`コマンドによるデプロイに変更
   - AWS Cliと EB Cliの違いもまだよくわかってないので要確認
-  - pip(python2)とpip3(python3)の使い分けもよくわかってないが、既に両方のバージョン入ってるので理解必要かも
+  - pip(python2)とpip3(python3)の使い分けもよくわかってないが、既に両方のバージョン入ってるので理解必要か
 
 ---
 
