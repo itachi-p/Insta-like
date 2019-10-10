@@ -2,7 +2,7 @@
     "AWSEBDockerrunVersion": 2,
     "volumes": [
         {
-            "name": "laravel-app",
+            "name": "larapp",
             "host": {
                 "sourcePath": "/var/app/current/laravel-app/public"
             }
@@ -22,14 +22,14 @@
       ],
     "containerDefinitions": [
         {
-            "name": "laravel-app",
+            "name": "larapp",
             "image": "568975345534.dkr.ecr.ap-northeast-1.amazonaws.com/php-fpm:latest",
             "essential": true,
             "memory": 128,
             "mountPoints": [
                 {
-                    "sourceVolume": "laravel-app",
-                    "containerPath": "/var/www"
+                    "sourceVolume": "larapp",
+                    "containerPath": "/var/www/public"
                 },
                 {
                     "sourceVolume": "php-ini",
@@ -44,8 +44,8 @@
             "memory": 128,
             "mountPoints": [
                 {
-                    "sourceVolume": "laravel-app",
-                    "containerPath": "/var/www"
+                    "sourceVolume": "larapp",
+                    "containerPath": "/var/www/public"
                 },
                 {
                   "sourceVolume": "nginx-proxy-conf",
@@ -54,7 +54,7 @@
                 }
             ],
             "links": [
-                "laravel-app"
+                "larapp"
             ],
             "portMappings": [{
                 "hostPort": 80,
