@@ -1,8 +1,5 @@
 <link rel="stylesheet" href="github-markdown.css">
 
-<p class="be-carefull">CSStest</p>
-<p class="pay_attention">CSSテスト</p>
-
 # itachi-P(🎲サイコロジック)'s GitHub repository
 ##### ※http://itachi-p.com からアクセスされた方向けメッセージ
 (よりセキュアなHTTPS接続に対応しました)<br>
