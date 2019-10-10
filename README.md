@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="itachi01.css">
 
+<p class="be-carefull">CSStest</p>
+<p class="pay_attention">CSSテスト</p>
+
 # itachi-P(🎲サイコロジック)'s GitHub repository
 ##### ※http://itachi-p.com からアクセスされた方向けメッセージ
 (よりセキュアなHTTPS接続に対応しました)<br>
@@ -16,7 +19,7 @@
 /S3(ストレージ)/RDS(MySQL)/ACM(HTTPS接続用電子証明)/Load Balancing(負荷分散)/Auto Scaling(パフォーマンス・コストバランス自動管理)
 /CloudWatch(メトリクス監視→通知・パフォーマンス自動管理)/SimpleNotificationService(CloudWatchと連動したアラート通知)/etc.<br>
 
-<a href="http://test-gcp.itachi-p.com/" style="pointer-events: none;">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
+<a href="http://test-gcp.itachi-p.com/" class="disable;">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
 
 - （参考）
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
