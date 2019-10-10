@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="itachi01.css">
+<link rel="stylesheet" href="github-markdown.css">
 
 <p class="be-carefull">CSStest</p>
 <p class="pay_attention">CSSテスト</p>
