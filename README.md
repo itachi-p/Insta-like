@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="itachi01.css">
+
 # itachi-P(🎲サイコロジック)'s GitHub repository
 ##### ※http://itachi-p.com からアクセスされた方向けメッセージ
 (よりセキュアなHTTPS接続に対応しました)<br>
