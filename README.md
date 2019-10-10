@@ -1,15 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="github-markdown.css">
-<style>
-	.markdown-body {
-		box-sizing: border-box;
-		min-width: 200px;
-		max-width: 980px;
-		margin: 0 auto;
-		padding: 45px;
-		color: red;
-	}
-</style>
 
 # itachi-P(🎲サイコロジック)'s GitHub repository
 ##### ※http://itachi-p.com からアクセスされた方向けメッセージ
@@ -27,7 +17,7 @@
 /S3(ストレージ)/RDS(MySQL)/ACM(HTTPS接続用電子証明)/Load Balancing(負荷分散)/Auto Scaling(パフォーマンス・コストバランス自動管理)
 /CloudWatch(メトリクス監視→通知・パフォーマンス自動管理)/SimpleNotificationService(CloudWatchと連動したアラート通知)/etc.<br>
 
-<a href="http://test-gcp.itachi-p.com/" class="disable;">テストページ3B GCP & Docker ※稼働停止中(AWS優先)</a><br>
+<a href="http://test-gcp.itachi-p.com/" class="disable">~~テストページ3B~~ GCP & Docker ※稼働停止中(AWS優先)</a><br>
 
 - （参考）
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
@@ -136,7 +126,7 @@
   - Dockerrun.aws.json及びローカルのディレクトリ構成変更
   - デプロイ方法をソースバンドル(Dockerrun.aws.json及びLaravelアプリ本体を含むzip)のアップロードからターミナル上でAWS EB Cliをインストールし、`eb deploy`コマンドによるデプロイに変更
   - AWS Cliと EB Cliの違いもまだよくわかってないので要確認
-  - pip(python2)とpip3(python3)の使い分けもよくわかってないが、既に両方のバージョン入ってるので理解必要かも
+  - pip(python2)とpip3(python3)の使い分けもよくわかってないが、既に両方のバージョン入ってるので理解必要か
   - エラーは出ずにデプロイ(`eb deploy`)及びアクセスはできるが、nginxのデフォルトページ固定でLaravelまで届かない問題継続中
   
 ---
