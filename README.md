@@ -7,7 +7,6 @@
 		max-width: 980px;
 		margin: 0 auto;
 		padding: 45px;
-    color: green;
 	}
 
 	@media (max-width: 767px) {
