@@ -22,7 +22,6 @@
 
 <a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">テストページ4 インス○もどき (ElasticBeanstalk multi-container Docker & Laradock)</a>
 
-<a href="https://www.yahoo.co.jp" style="pointer-events: none;">
 ---
 
 ### 履歴
