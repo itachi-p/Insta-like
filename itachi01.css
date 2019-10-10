@@ -1,0 +1,12 @@
+.be-carefull {
+  text-decoration: underline;
+}
+
+.pay_attention {
+  font-size: 1.2em;
+  color: #ee7777;
+}
+
+a.disable {
+  pointer-events: none;
+}
