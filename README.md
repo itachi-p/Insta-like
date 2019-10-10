@@ -21,6 +21,7 @@
   - [GCE上のContainer-Optimized OSでDocker Composeを使う（和訳）](https://qiita.com/gorohash/items/608da9050b32db581802)
 
 <a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">テストページ4 インス○もどき (ElasticBeanstalk multi-container Docker & Laradock)</a>
+10/09現在nginxデフォルトページ表示固定でLaravelアプリまで届かない問題に手こずり中
 
 ---
 
@@ -115,7 +116,7 @@
     - 上記を実行するための初回設定
     - AWS Cliのインストール(`pip3`)及び認証情報設定→ログイン成功、並びにIAMのユーザーにEB,ECSアクセス用ロール適用、ポリシー作成
   - 新規Elastic Beanstalk multi-container Docker 環境を構築
-- 2019/10/07
+- 2019/10/07~09
   - [docker-compose.yml→Dockerrun.aws.json自動変換](https://github.com/micahhausler/container-transform)
   - インスタもどきアプリ簡易作成
   - EB multi-container上でnginxのデフォルトページだけが表示される状態が未だ未解決
@@ -123,7 +124,8 @@
   - デプロイ方法をソースバンドル(Dockerrun.aws.json及びLaravelアプリ本体を含むzip)のアップロードからターミナル上でAWS EB Cliをインストールし、`eb deploy`コマンドによるデプロイに変更
   - AWS Cliと EB Cliの違いもまだよくわかってないので要確認
   - pip(python2)とpip3(python3)の使い分けもよくわかってないが、既に両方のバージョン入ってるので理解必要かも
-
+  - エラーは出ずにデプロイ(`eb deploy`)及びアクセスはできるが、nginxのデフォルトページ固定でLaravelまで届かない問題継続中
+  
 ---
 
 ### (以後の予定)
