@@ -2,7 +2,7 @@
 ##### ※http://itachi-p.com からアクセスされた方向けメッセージ
 (よりセキュアなHTTPS接続に対応しました)<br>
 <a href="https://itachi-p.com">(HTTPS接続)itachi-Pホーム（このページ）</a><br>
-<a href="https://github.com/itachi-P/Laravel-Docker_prj01/">当GitHubリポジトリ</a>
+<a href="https://github.com/itachi-P/Insta-like/">当GitHubリポジトリ</a>
 
 このページはまだ**工事(準備)中**です。<br>
 **タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。**
