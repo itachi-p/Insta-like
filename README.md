@@ -23,8 +23,14 @@
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
   - [GCE上のContainer-Optimized OSでDocker Composeを使う（和訳）](https://qiita.com/gorohash/items/608da9050b32db581802)
 
-<a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">テストページ4 インス○もどき (ElasticBeanstalk multi-container Docker & Laradock)</a><br>
-10/09現在nginxデフォルトページ表示固定でLaravelアプリまで届かない問題に手こずり中
+<a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">~~テストページ4~~ インス○もどき ※稼働停止中 (ElasticBeanstalk multi-container Docker & Laradock)</a><br>
+- nginxデフォルトページ表示固定でLaravelアプリまで届かない問題、及び`docker-compose up`での異常動作発生
+- 上記による学習計画見直し（問題解決の為に必要な学習範囲を分割、優先順位付け、学習順序を整理）
+  - 学習範囲を一旦絞りAWS及びLaravel(laradock)を外したローカル環境中心のDocker学習用新規リポジトリ生成
+  - 最小構成(Dockerfile/docker-compose.yml - php-fpm - nginx)で動く簡易アプリをローカル中心でテスト作成
+  - 簡易アプリをLaravel(laradock)に置き換え、docker-compose - nginx - laradock で動作確認
+  - ここまで成功した時点で再度AWS EC2インスタンス上に環境構築・デプロイ再開
+  - 最終的にはTerraform及びCircleCIを組み合わせ、ECS/ECRを利用したアプリケーション開発、CI/CDを実現する。
 
 ---
 
