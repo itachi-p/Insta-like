@@ -128,7 +128,18 @@
   - AWS Cliと EB Cliの違いもまだよくわかってないので要確認
   - pip(python2)とpip3(python3)の使い分けもよくわかってないが、既に両方のバージョン入ってるので理解必要か
   - エラーは出ずにデプロイ(`eb deploy`)及びアクセスはできるが、nginxのデフォルトページ固定でLaravelまで届かない問題継続中
-  
+  - 2019/10/10~
+    - 依然としてEB multi-container Dockerへの`eb deploy`でエラーが出なくてもnginxのデフォルトページから先に進まない状態から、デプロイがエラーになりnginxのページも表示されず、ローカルで`docker-compose exec workspace bash`によりコンテナ内部に入ると`/var/www/`の中身が空ディレクトリになっている、更に`docker-compose up`する度に大量の<none><none>イメージが毎回数十個作成された上で前述の通りworkspaceの/var/www/の中身が空の状態が別のリポジトリ（以前のプロジェクト）でも同様に発生
+    → Docker Composeの再インストール他の対策を実施
+    - 問題点・学習範囲の分解・順序を整理する必要性
+      - この問題を解決するために、まず一旦最小構成(Docker, nginx, php-fpm)かつローカルで完結する簡潔なアプリ(nginx上でphpinfo()を表示するだけのもので可)まで戻って理解を深める
+      - 上記を経て自分でDockerfile及びdocker-compose.yml、nginx用のsite.conf等設定ファイルを記述し環境を構築することに慣れる
+      - ここまでで以前に購入済みのUdemy動画教材、BOOTHやKindleで購入したPDF・epub教材、補足的に書籍を部分参照する（**頭から通して読破しようとしないこと**）
+      - 上記が完了した時点で再度Laravelアプリを組み込み、Docker - php-fpm - nginx - laravelの組み合わせでローカルで問題なく動くDockerイメージを作成する
+      - 上記をAWS EC2（またはheroku）上で動かす
+      - ここまで実現した上で、再度ElasticBeanstalk multi-container Docker上に改めてデプロイする
+      - **最終的に目指すゴールとして**、「コンテナ時代のWebアプリケーションの作り方」を参考に*Terraform*の使い方を学習し、TerratermによるAWSリソースの管理、更にはCircleCIを利用したCI/CDの実現、ECS(Elastic Beanstalk Dockerではなく)によるWebサービス公開までを実現する。
+
 ---
 
 ### (以後の予定)
