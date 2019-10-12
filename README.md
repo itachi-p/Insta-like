@@ -10,7 +10,7 @@
 このページはまだ**工事(準備)中**です。<br>
 **タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。**
 
-<a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（開発中）</a><br>
+<a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（開発一時停止中）</a><br>
 <br>
 ~~テストページ2~~ （テスト開発完了、稼働停止済）<br>
 - PHP7.2 & Laravel & AWS Elastic Beanstalk(ECS)/VPC/EC2/Route53/EBS/IAM(ユーザー・グループ権限管理)
@@ -23,8 +23,9 @@
   - [GCPで永久無料枠を利用してサービスを立ち上げたときにしたことの備忘録](https://qiita.com/riku-shiru/items/a870edd9dc0b132e092c)
   - [GCE上のContainer-Optimized OSでDocker Composeを使う（和訳）](https://qiita.com/gorohash/items/608da9050b32db581802)
 
-<a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">~~テストページ4~~ インス○もどき ※稼働停止中 (ElasticBeanstalk multi-container Docker & Laradock)</a><br>
+<a href="http://test-aws-ebmc-instamodoki.itachi-p.com/">テストページ4 インス○もどき ※更新一時停止中 (ElasticBeanstalk multi-container Docker & Laradock)</a><br>
 - nginxデフォルトページ表示固定でLaravelアプリまで届かない問題、及び`docker-compose up`での異常動作発生
+  - 上記はDocker-Composeの再インストールやEC2インスタンスの停止→自動複製インスタンス起動、MacBook Pro再起動等により自動的に(?)直った模様
 - 上記による学習計画見直し（問題解決の為に必要な学習範囲を分割、優先順位付け、学習順序を整理）
   - 学習範囲を一旦絞りAWS及びLaravel(laradock)を外したローカル環境中心のDocker学習用新規リポジトリ生成
   - 最小構成(Dockerfile/docker-compose.yml - php-fpm - nginx)で動く簡易アプリをローカル中心でテスト作成
@@ -135,7 +136,11 @@
   - pip(python2)とpip3(python3)の使い分けもよくわかってないが、既に両方のバージョン入ってるので理解必要か
   - エラーは出ずにデプロイ(`eb deploy`)及びアクセスはできるが、nginxのデフォルトページ固定でLaravelまで届かない問題継続中
   - 2019/10/10~
-    - 依然としてEB multi-container Dockerへの`eb deploy`でエラーが出なくてもnginxのデフォルトページから先に進まない状態から、デプロイがエラーになりnginxのページも表示されず、ローカルで`docker-compose exec workspace bash`によりコンテナ内部に入ると`/var/www/`の中身が空ディレクトリになっている、更に`docker-compose up`する度に大量の<none><none>イメージが毎回数十個作成された上で前述の通りworkspaceの/var/www/の中身が空の状態が別のリポジトリ（以前のプロジェクト）でも同様に発生
+    - 依然としてEB multi-container Dockerへの`eb deploy`でエラーは出ずともnginxのデフォルトページから先に進まない状態
+    - →からの、デプロイ自体がエラーになりnginxのページも表示されなくなる
+    - 加えてローカルで`docker-compose exec workspace bash`によりコンテナ内部に入ると`/var/www/`の中身が空ディレクトリになっている
+    - 更に`docker-compose up`する度に大量の\<none>\<none>イメージが毎回数十個作成されてしまうように（以前のプロジェクトでも同様の現象が発生）
+      - その上で前述の通りworkspaceの/var/www/の中身が空の状態が別のリポジトリ（以前のプロジェクト）でも同様に発生
     → Docker Composeの再インストール他の対策を実施
     - 問題点・学習範囲の分解・順序を整理する必要性
       - この問題を解決するために、まず一旦最小構成(Docker, nginx, php-fpm)かつローカルで完結する簡潔なアプリ(nginx上でphpinfo()を表示するだけのもので可)まで戻って理解を深める
