@@ -146,6 +146,10 @@
       - ここまで実現した上で、再度ElasticBeanstalk multi-container Docker上に改めてデプロイする
       - **最終的に目指すゴールとして**、「コンテナ時代のWebアプリケーションの作り方」を参考に*Terraform*の使い方を学習し、TerratermによるAWSリソースの管理、更にはCircleCIを利用したCI/CDの実現、ECS(Elastic Beanstalk Dockerではなく)によるWebサービス公開までを実現する。
 
+- 2019/10/13~
+  - AWS(ElasticBeanstalk) & Docker & Laravel(Laradock) {& CircleCI}を一度に全て組み合わせて同時進行は一旦停止し、それぞれの技術に分割し、リポジトリも分けて一定期間学習する方針に転換
+  - AWS、Docker、Laravel(Laradock)に分けてテスト開発・教材に沿った学習を並行し、最終的に全てを統合したポートフォリオを作成・公開する。
+
 ---
 
 ### (以後の予定)
