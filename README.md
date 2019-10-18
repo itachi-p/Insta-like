@@ -8,6 +8,7 @@
 <a href="https://github.com/itachi-P/Insta-like/">当GitHubリポジトリ</a>
 
 このページはまだ**工事(準備)中**です。<br>
+**複数インスタンス常時起動によりAWSから○ドルの利用料請求来そうなので一時停止(Elastic Beanstalk環境廃棄)**
 **タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。**
 
 <a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（開発中）</a><br>
