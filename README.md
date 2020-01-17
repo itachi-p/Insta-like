@@ -14,8 +14,8 @@
 
 このページはまだ**工事(準備)中**です。<br>
 **Amazonから◯◯ドルの利用料請求来たのでトップページ以外稼働停止中(Elastic Beanstalk環境廃棄)**<br>
-~~タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。~~
-AWS Well-Architected（ウェルアーキ）学びコスト最適化できるまで稼働停止中
+~~タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。~~<br>
+AWS Well-Architected（ウェルアーキ）を学びコスト最適化できるまで稼働停止中
 
 <a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（開発一時停止中）</a><br>
 <br>
