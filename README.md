@@ -2,14 +2,21 @@
 <link rel="stylesheet" href="github-markdown.css">
 
 # itachi-P(🎲サイコロジック)'s GitHub repository
+
+（2020/01/18更新）
+# 最新情報
+<p>スマホアプリ開発の必要に迫られ、Flutter学習開始</p>
+<strong>当面学習範囲を絞り、Flutter以外のことはやらない</strong>方針で暫くやります。
+
 ##### ※http://itachi-p.com からアクセスされた方向けメッセージ
-(よりセキュアなHTTPS接続に対応しました)<br>
+(HTTPS接続に対応しました)<br>
 <a href="https://itachi-p.com">(HTTPS接続)itachi-Pホーム（このページ）</a><br>
 <a href="https://github.com/itachi-P/Insta-like/">当GitHubリポジトリ</a>
 
 このページはまだ**工事(準備)中**です。<br>
-**複数インスタンス常時起動によりAWSから○ドルの利用料請求来そうなので一時停止(Elastic Beanstalk環境廃棄)**<br>
+**Amazonから◯◯ドルの利用料請求来たのでトップページ以外稼働停止中(Elastic Beanstalk環境廃棄)**<br>
 ~~タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。~~
+AWS Well-Architected（ウェルアーキ）学びコスト最適化できるまで稼働停止中
 
 <a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（開発一時停止中）</a><br>
 <br>
