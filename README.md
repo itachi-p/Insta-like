@@ -1,12 +1,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="github-markdown.css">
 
-# itachi-P(🎲サイコロジック)'s GitHub repository
+# itachi-P(🎲サイコロジック/ Psycho-Logic)'s GitHub repository
 
 （2020/01/18更新）
 # 最新情報
 <p>スマホアプリ開発の必要に迫られ、Flutter学習開始</p>
-<strong>当面学習範囲を絞り、Flutter以外のことはやらない</strong>方針で暫くやります。
+当面学習範囲を絞り、<strong>Flutter以外はやらない、手を出さない</strong>方針です。
 
 ##### ※http://itachi-p.com からアクセスされた方向けメッセージ
 (HTTPS接続に対応しました)<br>
