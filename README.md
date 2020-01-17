@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="github-markdown.css">
 
-# itachi-P(🎲サイコロジック/ Psycho-Logic)'s GitHub repository
+## itachi-P(サイコ🎲ジック/ Psycho-Logic)'s GitHub repository
 
 （2020/01/18更新）
 # 最新情報
