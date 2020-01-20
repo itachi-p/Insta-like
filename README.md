@@ -5,7 +5,7 @@
 
 # 最新情報　（2020/01/18更新）
 <p>スマホアプリ開発の必要に迫られ、Flutter学習開始</p>
-当面集中力を注ぐ範囲を絞り、プログラミング学習範囲としては<strong>Flutter以外はやらない、手を出さない</strong>方針です。
+当面集中力を注ぐ範囲を絞り、プログラミング学習範囲としては<strong>Flutter以外はやらない、手を出さない</strong>方針
 
 （旧）HTTPアドレス → HTTPS接続対応<br>
 <a href="https://itachi-p.com">(HTTPS接続)itachi-Pホーム（このページ）</a><br>
