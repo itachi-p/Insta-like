@@ -1,15 +1,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="github-markdown.css">
 
-# itachi-P(🎲サイコロジック)'s GitHub repository
-##### ※http://itachi-p.com からアクセスされた方向けメッセージ
-(よりセキュアなHTTPS接続に対応しました)<br>
+## itachi-P(サイコ🎲ジック/ Psycho-Logic)'s GitHub repository
+
+# 最新情報　（2020/01/18更新）
+<p>スマホアプリ開発の必要に迫られ、Flutter学習開始</p>
+当面集中力を注ぐ範囲を絞り、プログラミング学習範囲としては<strong>Flutter以外はやらない、手を出さない</strong>方針
+
+（旧）HTTPアドレス → HTTPS接続対応<br>
 <a href="https://itachi-p.com">(HTTPS接続)itachi-Pホーム（このページ）</a><br>
 <a href="https://github.com/itachi-P/Insta-like/">当GitHubリポジトリ</a>
 
-このページはまだ**工事(準備)中**です。<br>
-**複数インスタンス常時起動によりAWSから○ドルの利用料請求来そうなので一時停止(Elastic Beanstalk環境廃棄)**<br>
-~~タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。~~
+このページは**工事(準備)中**です。<br>
+**Amazonから◯◯ドルの利用料請求来たのでトップページを除き稼働停止中です**<br>
+~~タイミング次第で繋がらなかったりエラーが出たりします。ご了承下さい。~~<br>
+無料利用期間終了の為、AWS Well-Architected（ウェルアーキ）を学びコスト最適化後再開（常時稼働）予定
 
 <a href="http://laraveldockertest01-env.vahqeumhmx.ap-northeast-1.elasticbeanstalk.com/">テストページ1C AWS & Docker & Laradock（開発一時停止中）</a><br>
 <br>
